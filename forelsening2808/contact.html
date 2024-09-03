@@ -26,6 +26,49 @@
             <section>
                 <h2>Kontakt oss</h2>
             </section>
+            <section>
+                <h2>Ta kontakt med oss i dag</h2>
+                <form method="post">
+                    <label for="Navn">Navn:</label>
+                    <input type="text" name="Navn" placeholder="Nora Nordmann.." id="Navn" maxlength="45" required>
+
+                    <label>
+                        E-post:
+                        <input type="email" name="email" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                    </label>
+                    <label>
+                        Emne:
+                        <input type="text" name="Emne" placeholder="Hva handelr det om?">
+                    </label>
+                    <label>
+                        Melding:
+                        <textarea name="melding" required></textarea>
+                    </label>
+                    <label>
+                        nei
+                        <input type="radio" name="valg">
+                    </label>
+                    <label>
+                        ja
+                        <input type="radio" name="valg">
+                    </label>
+                    <label>
+                        kanskje
+                        <input type="radio" name="valg">
+                    </label>
+                    <input type="submit" value="Send melding">
+                    <label>
+                        Favoritt mat
+                        <select>
+                        <option value="Pizza">Pizza</option>
+                        <option value="Sushi"></option>
+                        <option value="Kebab">Kebab</option>
+                        
+                    </select>
+                </label>
+                    
+                </form>
+            </section>
         </main>
 
         <footer>2024 Adnan Rihan</footer>
