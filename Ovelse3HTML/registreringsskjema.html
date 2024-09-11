@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registreringsskjema</title>
+</head>
+<body>
+    <header>
+        <h1>Registering</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Fyll ut skjemaet</h2>
+
+            <form method="post">
+                <label>
+                    Navn:
+                    <input type="text" name="Navn" placeholder="Ola Nordmann.." maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                </label>
+
+                <label>
+                    E-post:
+                    <input type="email" name="E-post" placeholder="eksempel@hiof.no" required >
+                </label>
+
+                <label>
+                    Passord:
+                    <input type="password" name="Passord" placeholder="Passord" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                </label>
+
+                <label>
+                    Alder:
+                    <input type="number" name="Alder" placeholder="Alder" min="18" max="99" required>
+                </label>
+
+                <label>
+                    Telefonnummer:
+                    <input type="tel" name="Telefonnummer" placeholder="Telefonnummer" pattern="[0-9]{8,12}" required>
+                </label>
+                    
+                <label>
+                    Fødselsdato:
+                    <input type="date" name="Fødselsdato" max="2023-12-31" required>
+                </label>
+
+                <label>
+                    Kjønn:
+                    Mann:
+                    <input type="radio" name="Kjønn" required>
+                </label>
+                <label>
+                    Kvinne:
+                    <input type="radio" name="Kjønn" required>
+                </label>
+                <label>
+                    Annet:
+                    <input type="radio" name="Kjønn" required>
+                </label><br>
+
+                <label for="land">Land:</label>
+                    
+                    <select name="land" id="land" size="3" required>
+                        <option value="">Norge</option>
+                        <option value="sverige">Sverige</option>
+                        <option value="danmark">Danmark</option>
+                    </select>
+
+                <label>
+                    Personvern:
+                    <input type="checkbox" name="Personvern" id="Personvern" required>
+                </label>
+
+                <label>
+                    <input type="submit" value="Send">
+                </label>
+                
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
