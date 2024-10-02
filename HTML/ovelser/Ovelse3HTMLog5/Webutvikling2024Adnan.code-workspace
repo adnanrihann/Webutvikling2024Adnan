@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"name": "Webutvikling2024Adnan",
+			"path": "../../.."
+		},
+		{
+			"name": "zalandoLight",
+			"path": "../../../../WEBUTVIKLING2024/HTML/zalandoLight"
+		},
+		{
+			"path": "../../../../../../Apps/WEBUTVIKLING2024-main/WEBUTVIKLING2024-main/CSSanimasjoner"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CSSanimasjoner"
+	}
+}
