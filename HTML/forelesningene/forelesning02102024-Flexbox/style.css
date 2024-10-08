@@ -39,7 +39,6 @@ nav ul{
 }
 
 main{
-
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(42, 126, 126);
