@@ -1,0 +1,80 @@
+html {
+    font-size: calc(1em + 1vw); /* Setter grunnstørrelsen på teksten til 18px for hele dokumentet for å gi en standard baseline */
+}
+
+* {
+    box-sizing: border-box; /* Sikrer at padding og border blir inkludert i elementets totale bredde og høyde. Dette forenkler kontrollen over layouten */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Setter standard fontfamilie til Arial, med fallback til Helvetica og sans-serif for kompatibilitet på tvers av enheter */
+}
+
+h1{font-size: 2rem;}
+h2{font-size: 1.8rem;}
+h3{font-size: 1.6rem;}
+h4{font-size: 1.4rem;}
+p, a{font-size: 1rem;}
+
+#flex-container{
+display: flex;
+flex-wrap: wrap;
+
+}
+
+#logo{
+    padding: 0.30rem;
+    font-style: oblique;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, Arial, Helvetica, sans-serif;
+
+}
+
+header nav{
+    
+    padding: 1rem;
+    text-align: center;
+    background-color: rgb(224, 224, 224);
+
+}
+nav ul{
+    padding: 0;
+    
+ li{
+   list-style: none;
+   text-decoration: none;
+   padding: 0.25rem;
+
+   
+ }
+
+ 
+}
+header li a{
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    
+}
+
+section{
+    padding:1rem ;
+}
+/*DESKTOP*/
+@media only screen and (min-width: 680px) {
+    nav{
+        display:flex;
+        flex-wrap: wrap;
+        
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            position: absolute;
+            right: 10px;
+        }
+    }
+    
+    
+}
